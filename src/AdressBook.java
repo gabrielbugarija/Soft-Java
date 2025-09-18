@@ -1,4 +1,23 @@
+import java.util.ArrayList;
+
 public class AdressBook {
+
+    private ArrayList<BuddyInfo> buddies;
+
+
+    public AdressBook() {
+        this.buddies = new ArrayList<>();
+    }
+
+    public void addBuddy(BuddyInfo buddy){
+        buddies.add(buddy);
+    }
+
+    public void removeBuddy(BuddyInfo buddy){
+
+        buddies.remove(buddy);
+
+    }
 
 
     public static void main(String[] args) {
@@ -9,18 +28,11 @@ public class AdressBook {
 
         AdressBook adressBook = new AdressBook();
 
-        AdressBook.addBuddy(buddy);
+        adressBook.addBuddy(buddy);
 
-        AdressBook.removeBuddy(buddy);
-
-
-    }
-    public static void addBuddy(BuddyInfo buddy){
-
-    }
-
-    public static void removeBuddy(BuddyInfo buddy){
+        adressBook.removeBuddy(buddy);
 
 
     }
+
 }
