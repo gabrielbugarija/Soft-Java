@@ -6,10 +6,12 @@ public class AdressBook {
 
 
     public AdressBook() {
+
         this.buddies = new ArrayList<>();
     }
 
     public void addBuddy(BuddyInfo buddy){
+
         buddies.add(buddy);
     }
 
